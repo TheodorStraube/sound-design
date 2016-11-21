@@ -1,0 +1,57 @@
+#N canvas 181 37 304 550 10;
+#X obj -11 499 dac~;
+#X obj 157 399 carspeed;
+#X obj 196 275 + 1;
+#X obj 160 275 i;
+#X floatatom 160 311 5 0 0 0 - - -;
+#X msg 68 189 0;
+#X obj 160 238 metro 1000;
+#X obj -41 -22 cnv 15 300 100 empty empty Main_Patch 20 12 0 14 -187776
+-66577 0;
+#X obj -23 10 bng 15 250 50 0 startSound empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -23 45 bng 15 250 50 0 stopSound empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 2 44 Stop;
+#X text 1 8 Start;
+#X obj 160 363 select 1 2 3 4;
+#X obj -11 431 osc~;
+#X floatatom 157 428 5 0 0 0 - - -;
+#X floatatom 112 299 5 0 0 0 - - -;
+#X obj 69 159 r stopSound;
+#X obj 118 188 r startSound;
+#X floatatom 23 189 5 0 0 0 - - -;
+#X obj 124 11 hsl 128 15 0 1 0 0 sliderVol empty empty -2 -8 0 10 -262144
+-1 -1 10600 1;
+#X text 121 -9 Volume;
+#X obj 19 464 *~;
+#X obj 108 456 r sliderVol;
+#X floatatom 87 481 5 0 0 0 - - -;
+#X text -15 178 Init Speed Value;
+#X text -35 407 TODO: Paste Sound Module here!;
+#X text 157 330 TODO: Paste Video Timestamps here;
+#X connect 1 0 14 0;
+#X connect 2 0 3 1;
+#X connect 3 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 12 0;
+#X connect 5 0 3 0;
+#X connect 5 0 6 0;
+#X connect 5 0 21 1;
+#X connect 6 0 3 0;
+#X connect 12 0 1 1;
+#X connect 12 1 1 2;
+#X connect 12 2 1 1;
+#X connect 12 3 1 2;
+#X connect 13 0 21 0;
+#X connect 14 0 15 0;
+#X connect 14 0 13 0;
+#X connect 15 0 1 0;
+#X connect 16 0 5 0;
+#X connect 16 0 18 0;
+#X connect 17 0 6 0;
+#X connect 17 0 23 0;
+#X connect 18 0 15 0;
+#X connect 21 0 0 0;
+#X connect 22 0 23 0;
+#X connect 23 0 21 1;
