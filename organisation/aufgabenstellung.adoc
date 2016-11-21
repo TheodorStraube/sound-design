@@ -1,0 +1,10 @@
+== Aufgabenstellung
+
+Für die Praktikumsarbeit im Rahmen der Vorlesung „Sound Design“ im Wintersemester 2016/2017 ist die gegebene und nachfolgend beschriebene Aufgabenstellung zu bearbeiten. Zu einem gegeben Filmausschnitt soll die Geräusch- und Klangkullise neu modelliert werden.
+Die neu gestalteten Geräusche sollen den Visuellen Teil des Filmausschnittes ergänzen, sodass beim Betrachter eine natürlicher Eindruck entsteht und der synthetische Charakter der Geräusche vom Außenstehenden nicht mehr erkennbar ist. Im gegebenen Filmausschnitt fährt ein Sportwagen der Marke „Porsche“ eine Rennstrecke entlang. Der Ausschnitt zeigt den Wagen dabei in verschiedenen Perspektiven. Bei der Klanggestaltung ist darauf zu achten, dass die synthetischen Klänge der wechselnden Szenerie entsprechen. Im speziellen soll sich hinsichtlich folgender Aspekte orientiert werden.
+
+Die Motorengeräusche des Wagens sollen dem Betrachter suggerieren, dass es sich bei dem Wagen um ein elektrisch betriebenes Fahrzeug handelt. Bei der Modellierung des Motorengeräusches kann sich dabei an Klängen aktueller Elektromotoren orientiert werden, es können jedoch auch eigene, futuristische Klänge entwickelt werden.
+
+Mögliche Umgebungs- beziehungsweise Innenraumgeräusche sollen in die Klanggestaltung mit einfließen, um eine authentische Geräuschkullise zu generieren.
+
+Die vom Fahrzeug ausgehenden Geräusche sollen dem Betrachter einen hochwertig-luxuriösen und angenehmen Eindruck des Fahrzeuges vermitteln. Der Charakter des „Sportwagens“ mit hoher Leistung soll dabei untergeordnet bleiben.

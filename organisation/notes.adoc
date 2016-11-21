@@ -1,0 +1,17 @@
+= Notizen vom 16.11.2016
+
+== Klang
+- tiefes Motorengeräusch als Ausgang, leicht pulsierend
+- hohe Frequenz (Flugzeugturbine?) bei Leistungssteigerung (Knight Rider)
+- Anspruch an Klang: keine Anstrengung
+
+
+== Pd - Umsetzung
+- Metronom zur zeitlichen Diskretisierung
+- Ausgabe Metronom moduliert Ausgangssignal
+- Top-Down-Prinzip: einfache Patches erstellen, fixe Werte nach und nach durch Inlets/ Patches ersetzen
+
+== Aufteilung
+
+- Theo, Tom: Motorengeräusch
+- Andy, Alex: Modulation
