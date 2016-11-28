@@ -1,4 +1,4 @@
-#N canvas 394 46 1280 700 10;
+#N canvas 95 60 1280 700 10;
 #X obj 202 192 osc~;
 #X obj 206 362 *~;
 #X floatatom 132 16 5 0 100 0 - - -;
@@ -63,7 +63,7 @@
 #X floatatom 436 15 5 0 0 0 - - -;
 #X obj 778 131 sig~;
 #X obj 733 221 +~;
-#N canvas 79 534 1905 226 turbine 0;
+#N canvas 42 372 823 495 turbine 1;
 #X obj 0 242 osc~;
 #X obj 39 241 osc~;
 #X obj 78 240 osc~;
@@ -124,7 +124,7 @@
 #X obj 685 278 hip~ 200;
 #X obj 272 4 inlet;
 #X obj 126 677 outlet~;
-#X obj 473 122 * 0.001;
+#X obj 473 122 * 0.002;
 #X connect 0 0 11 0;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
