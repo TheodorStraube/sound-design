@@ -1,9 +1,9 @@
-#N canvas 96 82 603 639 10;
+#N canvas 97 87 603 639 10;
 #X obj 18 588 dac~;
 #X obj 213 460 carspeed;
 #X obj 196 275 + 1;
 #X obj 160 275 i;
-#X floatatom 160 311 5 0 0 0 - - -;
+#X floatatom 160 311 5 0 0 0 - - -, f 5;
 #X msg 68 189 0;
 #X obj 160 238 metro 1000;
 #X obj -79 -21 cnv 15 600 100 empty empty Main_Patch 20 12 0 14 -260029
@@ -14,16 +14,16 @@
 -1 -1;
 #X text 2 44 Stop;
 #X text 1 8 Start;
-#X floatatom 186 517 5 0 0 0 - - -;
+#X floatatom 186 517 5 0 0 0 - - -, f 5;
 #X obj 69 159 r stopSound;
 #X obj 118 188 r startSound;
-#X floatatom 24 190 5 0 0 0 - - -;
+#X floatatom 24 190 5 0 0 0 - - -, f 5;
 #X obj 124 11 hsl 128 15 0 1 0 0 sliderVol empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 3300 1;
 #X text 121 -9 Volume;
 #X obj 48 553 *~;
 #X obj 137 545 r sliderVol;
-#X floatatom 116 570 5 0 0 0 - - -;
+#X floatatom 116 570 5 0 0 0 - - -, f 5;
 #X text -81 189 Init Speed Value;
 #X obj 160 363 select 0 1 5 6 13 18 20 22 24 27 30 34 36 39 42 44;
 #X text 173 342 Video Timestamps;
