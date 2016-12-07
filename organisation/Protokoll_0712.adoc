@@ -1,0 +1,31 @@
+= Teammeeting 07.12.2016
+
+== TODO:
+
+- Umgebungsgeräusche
+
+- Reifengeräusche
+
+- Test mit Turbinensample
+
+- Innenraum-Ansicht: Veränderte Fahrzeuggeräusche
+
+- Fokus auf Motorgeräusche
+
+
+== Zeitplan
+
+- Fertigstellung letzt Dezemberwoche
+
+- Januar: Messlabor mit Probanden (Hördudes)
+
+- 1.2. Abschlusspräsentation
+
+== Aufgabenteilung
+
+- Tom: Innenraum
+
+- Andi: Reifengeräusche
+
+
+-
