@@ -2,7 +2,7 @@
 #X obj -12 250 noise~;
 #X obj -13 288 lop~;
 #X obj 68 273 hsl 128 15 0 200 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9900 1;
+-1 -1 7200 1;
 #X obj -12 330 lop~;
 #X obj -13 369 lop~;
 #X text 99 256 Wind;
@@ -23,8 +23,8 @@
 #X obj 284 211 random 10;
 #X obj 277 253 + 20;
 #X obj 25 699 outlet~;
-#X obj 185 611 hsl 128 15 0 10 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 3200 1;
+#X obj 185 611 hsl 128 15 0 5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4900 1;
 #X obj 115 642 *~;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;

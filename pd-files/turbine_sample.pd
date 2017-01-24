@@ -1,4 +1,4 @@
-#N canvas -1397 308 450 300 10;
+#N canvas 0 308 450 300 10;
 #X obj 23 132 readsf~;
 #X msg 238 83 start;
 #X msg 291 83 stop;
@@ -8,9 +8,9 @@
 #X obj 175 256 outlet~;
 #X obj 119 168 *~;
 #X obj 187 150 hsl 128 15 0 1 0 0 empty empty Volume -2 -8 0 10 -262144
--1 -1 1100 1;
+-1 -1 700 1;
 #X msg 22 81 open ../samples/turbine_short.wav;
-#N canvas 20 153 457 500 pitchshift 1;
+#N canvas 20 153 457 500 pitchshift 0;
 #X obj 40 18 inlet~;
 #X obj 161 396 outlet~;
 #X obj 40 72 delwrite~ \$0-audio 200;

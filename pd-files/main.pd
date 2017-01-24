@@ -1,4 +1,4 @@
-#N canvas 502 38 801 836 10;
+#N canvas 816 48 801 836 10;
 #X obj 213 460 carspeed;
 #X obj 196 275 + 1;
 #X obj 160 275 i;
@@ -18,7 +18,7 @@
 #X obj 118 188 r startSound;
 #X floatatom 24 190 5 0 0 0 - - -;
 #X obj 125 12 hsl 128 15 0 1 0 0 sliderVol empty empty -2 -8 0 10 -262144
--1 -1 2000 1;
+-1 -1 1700 1;
 #X text 121 -9 Volume;
 #X obj 48 553 *~;
 #X obj 137 545 r sliderVol;
@@ -30,7 +30,7 @@
 #X obj 42 671 interior_mod;
 #X obj 68 609 select 0 20 32;
 #X obj 329 637 hsl 128 15 1 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5800 1;
+-1 -1 6500 1;
 #X obj 187 719 *~;
 #X obj 275 724 *~;
 #X obj 327 671 *~ -1;
@@ -46,7 +46,7 @@
 #X obj 322 460 turbine_sample;
 #X obj 501 405 / 100;
 #X obj 553 432 - 1;
-#X obj 51 715 reifen_wind;
+#X obj -62 623 reifen_wind;
 #X msg 24 153 90;
 #X connect 0 0 11 0;
 #X connect 0 0 40 0;
@@ -99,9 +99,8 @@
 #X connect 28 0 35 0;
 #X connect 29 0 30 0;
 #X connect 30 0 28 1;
-#X connect 32 0 34 1;
-#X connect 32 0 34 0;
 #X connect 32 0 35 0;
+#X connect 32 0 24 0;
 #X connect 33 0 39 1;
 #X connect 36 0 35 1;
 #X connect 37 0 35 2;
@@ -109,6 +108,5 @@
 #X connect 39 0 32 0;
 #X connect 40 0 41 0;
 #X connect 41 0 38 0;
-#X connect 42 0 34 0;
-#X connect 42 0 34 1;
+#X connect 42 0 24 0;
 #X connect 43 0 14 0;
