@@ -1,4 +1,4 @@
-#N canvas -1501 178 801 836 10;
+#N canvas -1498 144 801 836 10;
 #X obj 213 460 carspeed;
 #X obj 196 275 + 1;
 #X obj 160 275 i;
@@ -42,9 +42,10 @@
 #X obj 291 753 write_to_file;
 #X obj 381 697 r startSound;
 #X obj 472 697 r stopSound;
+#X floatatom 501 454 5 0 0 0 - - -;
 #X obj 322 460 turbine_sample;
-#X floatatom 500 439 5 0 0 0 - - -;
-#X obj 500 412 / 10;
+#X obj 501 405 / 100;
+#X obj 553 432 - 1;
 #X connect 0 0 11 0;
 #X connect 0 0 40 0;
 #X connect 1 0 2 1;
@@ -67,8 +68,8 @@
 #X connect 18 0 32 1;
 #X connect 19 0 17 1;
 #X connect 21 0 0 1;
-#X connect 21 0 38 0;
 #X connect 21 1 0 2;
+#X connect 21 1 39 0;
 #X connect 21 2 0 1;
 #X connect 21 3 0 2;
 #X connect 21 4 0 1;
@@ -99,9 +100,10 @@
 #X connect 32 0 34 1;
 #X connect 32 0 34 0;
 #X connect 32 0 35 0;
-#X connect 33 0 38 1;
+#X connect 33 0 39 1;
 #X connect 36 0 35 1;
 #X connect 37 0 35 2;
-#X connect 38 0 32 0;
-#X connect 39 0 38 2;
-#X connect 40 0 39 0;
+#X connect 38 0 39 2;
+#X connect 39 0 32 0;
+#X connect 40 0 41 0;
+#X connect 41 0 38 0;
