@@ -1,7 +1,7 @@
-#N canvas -57 194 1178 985 10;
+#N canvas 0 194 1178 985 10;
 #X obj 202 192 osc~;
 #X obj 206 362 *~;
-#X floatatom 132 16 5 0 100 0 - - -, f 5;
+#X floatatom 132 28 5 0 100 0 - - -;
 #X obj 133 277 / 100;
 #X text 324 13 Input (Power);
 #X obj 205 437 s~ output;
@@ -40,8 +40,8 @@
 #X connect 9 0 2 0;
 #X restore 1199 356 pd hover;
 #X obj 784 566 +~ 0.3;
-#X floatatom 1445 221 5 0 0 0 - - -, f 5;
-#X floatatom 1201 182 5 0 0 0 - - -, f 5;
+#X floatatom 1445 221 5 0 0 0 - - -;
+#X floatatom 1201 182 5 0 0 0 - - -;
 #X obj 1205 293 / 100;
 #X obj 804 385 *~ 1;
 #X obj 804 438 /~ 2;
@@ -58,9 +58,9 @@
 #X obj 600 167 noise~;
 #X obj 601 231 hip~ 40;
 #X obj 600 199 lop~ 20;
-#X floatatom 278 42 5 0 0 0 - - -, f 5;
+#X floatatom 278 42 5 0 0 0 - - -;
 #X obj 202 131 +;
-#X floatatom 436 15 5 0 0 0 - - -, f 5;
+#X floatatom 436 15 5 0 0 0 - - -;
 #X obj 778 131 sig~;
 #X obj 733 221 +~;
 #N canvas 595 425 823 495 turbine 0;
@@ -124,7 +124,7 @@
 #X obj 685 278 hip~ 200;
 #X obj 272 4 inlet;
 #X obj 126 677 outlet~;
-#N canvas 1151 58 765 461 turb_lower 1;
+#N canvas 1151 58 765 461 turb_lower 0;
 #X obj 47 265 osc~;
 #X obj 86 264 osc~;
 #X obj 125 263 osc~;
@@ -179,8 +179,7 @@
 #X connect 21 0 17 0;
 #X connect 22 0 5 0;
 #X restore 896 171 pd turb_lower;
-#X obj 473 122 * 0.02;
-#N canvas 4 58 733 413 turb_2 1;
+#N canvas 4 58 733 413 turb_2 0;
 #X obj 47 265 osc~;
 #X obj 86 264 osc~;
 #X obj 125 263 osc~;
@@ -235,6 +234,7 @@
 #X connect 21 0 17 0;
 #X connect 22 0 5 0;
 #X restore 895 219 pd turb_2;
+#X obj 473 122 * 0.002;
 #X connect 0 0 11 0;
 #X connect 1 0 5 0;
 #X connect 2 0 3 0;
@@ -271,5 +271,5 @@
 #X connect 43 0 44 0;
 #X connect 44 0 28 0;
 #X connect 45 0 35 0;
-#X connect 45 0 48 0;
-#X connect 48 0 38 0;
+#X connect 45 0 49 0;
+#X connect 49 0 38 0;
