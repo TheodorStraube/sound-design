@@ -1,4 +1,4 @@
-#N canvas 0 308 450 300 10;
+#N canvas 830 417 450 300 10;
 #X obj 23 132 readsf~;
 #X msg 238 83 start;
 #X msg 291 83 stop;
@@ -6,9 +6,6 @@
 #X obj 16 39 t b b;
 #X obj 292 14 inlet;
 #X obj 175 256 outlet~;
-#X obj 119 168 *~;
-#X obj 187 150 hsl 128 15 0 1 0 0 empty empty Volume -2 -8 0 10 -262144
--1 -1 700 1;
 #X msg 22 81 open ../samples/turbine_short.wav;
 #N canvas 20 153 457 500 pitchshift 0;
 #X obj 40 18 inlet~;
@@ -58,16 +55,17 @@
 #X connect 21 0 1 0;
 #X restore 174 218 pd pitchshift;
 #X obj 391 201 inlet;
-#X connect 0 0 7 0;
-#X connect 0 1 4 0;
+#X obj 135 27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 8 0;
+#X connect 0 1 10 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 4 0;
 #X connect 4 0 1 0;
-#X connect 4 1 9 0;
+#X connect 4 1 7 0;
 #X connect 5 0 2 0;
-#X connect 7 0 10 0;
-#X connect 8 0 7 1;
-#X connect 9 0 0 0;
-#X connect 10 0 6 0;
-#X connect 11 0 10 1;
+#X connect 7 0 0 0;
+#X connect 8 0 6 0;
+#X connect 9 0 8 1;
+#X connect 10 0 4 0;
