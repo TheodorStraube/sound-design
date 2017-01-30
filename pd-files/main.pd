@@ -1,4 +1,4 @@
-#N canvas 7 22 813 752 10;
+#N canvas 564 90 813 752 10;
 #X obj 340 311 carspeed;
 #X obj 196 275 + 1;
 #X obj 160 275 i;
@@ -13,40 +13,40 @@
 -1 -1;
 #X text 2 44 Stop;
 #X text 1 8 Start;
-#X floatatom 197 389 5 0 0 0 - - -;
+#X floatatom 6 355 5 0 0 0 - - -;
 #X obj 69 159 r stopSound;
 #X obj 118 188 r startSound;
 #X floatatom 24 190 5 0 0 0 - - -;
-#X obj 125 12 hsl 128 15 0 1 0 0 sliderVol empty empty -2 -8 0 10 -262144
--1 -1 4200 1;
+#X obj 130 19 hsl 128 15 0 1 0 0 sliderVol empty empty -2 -8 0 10 -262144
+-1 -1 2000 1;
 #X text 121 -9 Volume;
 #X obj 180 533 r sliderVol;
 #X text -81 189 Init Speed Value;
 #X obj 287 214 select 0 1 5 6 13 18 20 22 24 27 30 34 36 39 42 44;
 #X text 300 193 Video Timestamps;
 #X obj 6 386 Playground;
-#X obj 55 592 interior_mod;
+#X obj 60 615 interior_mod;
 #X obj 79 481 select 0 20 32;
-#X obj 345 548 hsl 128 15 1 0 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6500 1;
+#X obj 345 547 hsl 128 15 1 0 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5400 1;
 #X obj 200 639 *~;
 #X obj 288 644 *~;
 #X obj 343 582 *~ -1;
 #X obj 340 619 +~ 1;
 #X text 365 528 Doppler-Effekt;
-#X obj 617 225 r stopSound;
+#X obj 345 380 r stopSound;
 #X obj 230 683 dac~;
 #X obj 304 673 write_to_file;
 #X obj 394 617 r startSound;
 #X obj 485 617 r stopSound;
 #X floatatom 628 305 5 0 0 0 - - -;
-#X obj 449 311 turbine_sample;
+#X obj 305 485 turbine_sample;
 #X obj 628 256 / 100;
-#X obj 680 283 - 1;
+#X obj 628 280 - 1;
 #X obj -51 495 reifen_wind;
 #X msg 24 153 90;
 #X obj 180 508 r startSound;
-#N canvas 833 23 447 370 mixer 1;
+#N canvas 832 24 447 370 mixer 1;
 #X obj 20 91 cnv 15 100 200 empty empty Wind 20 12 0 14 -4032 -66577
 0;
 #X obj 161 91 cnv 15 100 200 empty empty Synth 20 12 0 14 -4160 -262144
@@ -54,11 +54,11 @@
 #X obj 289 91 cnv 15 100 200 empty empty Turbine 20 12 0 14 -159808
 -262144 0;
 #X obj 98 100 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6800 1;
+-1 -1 7900 1;
 #X obj 240 101 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 11000 1;
+-1 -1 6900 1;
 #X obj 367 112 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4100 1;
+-1 -1 1200 1;
 #X obj 58 269 *~;
 #X obj 199 269 *~;
 #X obj 324 267 *~;
@@ -79,6 +79,10 @@
 #X msg 126 274 1;
 #X obj 54 430 *~;
 #X obj 58 565 *~;
+#X obj 24 119 loadbang;
+#X obj -7 595 loadbang;
+#X obj 344 563 sig~;
+#X obj 180 555 sig~;
 #X connect 0 0 11 0;
 #X connect 0 0 37 0;
 #X connect 1 0 2 1;
@@ -96,7 +100,7 @@
 #X connect 13 0 5 0;
 #X connect 13 0 43 0;
 #X connect 14 0 0 0;
-#X connect 17 0 45 1;
+#X connect 17 0 49 0;
 #X connect 19 0 0 1;
 #X connect 19 1 0 2;
 #X connect 19 1 36 0;
@@ -115,10 +119,8 @@
 #X connect 21 0 44 0;
 #X connect 22 0 25 0;
 #X connect 22 0 26 0;
-#X connect 23 1 22 1;
-#X connect 23 2 22 1;
 #X connect 24 0 25 1;
-#X connect 24 0 27 0;
+#X connect 24 0 48 0;
 #X connect 25 0 31 0;
 #X connect 25 0 31 1;
 #X connect 25 0 32 0;
@@ -141,3 +143,6 @@
 #X connect 43 0 44 1;
 #X connect 44 0 42 1;
 #X connect 45 0 22 0;
+#X connect 46 0 40 0;
+#X connect 48 0 27 0;
+#X connect 49 0 45 1;
