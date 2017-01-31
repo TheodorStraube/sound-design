@@ -1,4 +1,4 @@
-#N canvas 303 22 813 752 10;
+#N canvas 247 22 813 752 10;
 #X obj 340 311 carspeed;
 #X obj 196 275 + 1;
 #X obj 160 275 i;
@@ -26,14 +26,14 @@
 #X obj 60 615 interior_mod;
 #X obj 345 547 hsl 128 15 1 0 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 200 639 *~;
-#X obj 288 644 *~;
+#X obj 178 666 *~;
+#X obj 266 671 *~;
 #X obj 343 582 *~ -1;
 #X obj 340 619 +~ 1;
 #X text 365 528 Doppler-Effekt;
 #X obj 345 380 r stopSound;
-#X obj 230 683 dac~;
-#X obj 304 673 write_to_file;
+#X obj 208 710 dac~;
+#X obj 282 700 write_to_file;
 #X obj 394 617 r startSound;
 #X obj 485 617 r stopSound;
 #X floatatom 628 305 5 0 0 0 - - -;
@@ -51,11 +51,11 @@
 #X obj 289 91 cnv 15 100 200 empty empty Turbine 20 12 0 14 -159808
 -262144 0;
 #X obj 98 100 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4200 1;
+-1 -1 9500 1;
 #X obj 240 101 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9100 1;
+-1 -1 8500 1;
 #X obj 367 112 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 3100 1;
+-1 -1 1600 1;
 #X obj 58 269 *~;
 #X obj 199 269 *~;
 #X obj 324 267 *~;
